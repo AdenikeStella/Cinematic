@@ -9,7 +9,7 @@ export const MovieDetail = () => {
     // eslint-disable-next-line
   const pageTitle = useTitle(movie.title);
 
-  const {id, original_title, overview, poster_path, genres, vote_count, vote_average, runtime, revenue, imdb_id, release_date, budget} = movie;
+  const { vote_count, vote_average} = movie;
 
   const image = movie.poster_path ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}` : Backup ;
 
